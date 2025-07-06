@@ -9,7 +9,8 @@ export default function ContactPage() {
         <title>Contact Us | Jabbour Tutoring</title>
         <meta
           name="description"
-          content="Reach out to Jabbour Tutoring by WhatsApp or Email. Schedule your consultation call today."
+          content="Reach out to Jabbour Tutoring by WhatsApp or Email. Schedule your consultation call today.
+          Improve your grades with expert tutors here in Lebanon. "
         />
       </Head>
 
@@ -18,7 +19,7 @@ export default function ContactPage() {
       <main className="min-h-screen bg-gradient-to-b from-green-100 to-white text-gray-800 font-[Inter]">
         <section className="py-20 px-6 max-w-3xl mx-auto text-center">
           <h1 className="text-4xl font-[Playfair Display] font-bold text-green-800 mb-4">
-            Contact Us by WhatsApp or Email for a Consultation Call
+            Feel free to Contact Us by WhatsApp or Email for a Consultation Call
           </h1>
           <p className="text-lg text-gray-700 mb-2">
             📞 WhatsApp:{" "}
@@ -44,7 +45,7 @@ export default function ContactPage() {
               href="mailto:jabbourtutoring@example.com"
               className="text-green-700 font-semibold hover:underline"
             >
-              jabbourtutoring@example.com
+              JamesJabbour88@gmail.com
             </a>
           </p>
 

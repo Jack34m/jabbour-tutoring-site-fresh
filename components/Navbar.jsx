@@ -32,12 +32,6 @@ export default function Navbar() {
         <Link href="/services" className="text-gray-700 hover:text-green-700">
           Services
         </Link>
-        <Link
-          href="/testimonials"
-          className="text-gray-700 hover:text-green-700"
-        >
-          Testimonials
-        </Link>
         <Link href="/contact" className="text-gray-700 hover:text-green-700">
           Contact
         </Link>

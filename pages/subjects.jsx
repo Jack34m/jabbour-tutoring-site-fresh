@@ -7,7 +7,7 @@ export default function SubjectsPage() {
     <>
         <Head>
         <title>Subjects | Jabbour Tutoring</title>
-        <meta name="description" content="Explore the subjects we specialize in — Math, English, and Physics — for students of all levels in Lebanon." />
+        <meta name="description" content="Explore the subjects we specialize in — Math, English, and Physics — for students of all levels in Lebanon. We offer online tutoring across Lebanon" />
         </Head>
 
         <Navbar />
@@ -16,7 +16,7 @@ export default function SubjectsPage() {
         <section className="py-20 px-6 max-w-5xl mx-auto text-center">
             <h1 className="text-4xl font-[Playfair Display] font-bold text-green-800 mb-6">Subjects We Teach</h1>
             <p className="text-lg text-gray-700 mb-12 max-w-3xl mx-auto">
-            At Jabbour Tutoring, we offer expert guidance in three core subjects that form the foundation of academic success. Whether you're preparing for exams or building confidence, we tailor our approach to your needs.
+            At Jabbour Tutoring, we offer expert guidance in three core subjects that form the foundation of academic success. Whether you're preparing for exams, citizenship exams abraod, or building confidence, we tailor our approach to your needs. 
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

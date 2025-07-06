@@ -10,7 +10,7 @@ export default function AboutPage() {
         <title>About Us | Jabbour Tutoring</title>
         <meta
           name="description"
-          content="Meet the founders of Jabbour Tutoring — a mother-son team offering tailored academic help to Lebanese students."
+          content="Meet the founders of Jabbour Tutoring — a mother-son team offering tailored academic help to Lebanese students. Lebanses official exam help included. High quality private math and physics tutoring."
         />
       </Head>
 
@@ -21,12 +21,11 @@ export default function AboutPage() {
           <h1 className="text-4xl font-[Playfair Display] font-bold text-green-800 mb-6">
             Meet the Team
           </h1>
-          <p className="text-lg text-gray-700 mb-12 max-w-3xl mx-auto">
-            Jabbour Tutoring is proudly co-owned and operated by a mother and
-            son team dedicated to helping students rise to new academic heights
+          <h3 className="text-lg text-gray-700 mb-12 max-w-3xl mx-auto">
+            Jabbour Tutoring is private tutoring center. Jabbour tutoring is proudly co-owned and operated by a mother and son team dedicated to helping students rise to new academic heights
             in English, Mathematics, and Physics. We bring passion, patience,
-            and personalized strategies to every lesson.
-          </p>
+            and personalized strategies to every lesson. 
+          </h3>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             {/* Card 1 - Placeholder for You */}
@@ -43,9 +42,9 @@ export default function AboutPage() {
                 James Jabbour
               </h2>
               <p className="text-sm text-gray-600 mt-2 text-center">
-                Co-founder & Math/Physics Tutor
+                Math and Physics tutor.
                 <br />
-                Civil Engineering Student
+                James is a third year civil engineering student studying at NDU university. Equipped with over 2 years of tutoring experince, James can often predict where students may get stuck, or misinterpret certain concepts.
               </p>
             </div>
 
@@ -60,12 +59,12 @@ export default function AboutPage() {
                 />
               </div>
               <h2 className="text-xl font-semibold text-green-800">
-                Mrs. Jabbour
+                Nicole Jabbour
               </h2>
               <p className="text-sm text-gray-600 mt-2 text-center">
-                Co-founder & English Tutor
+                English and Math tutor.
                 <br />
-                With over 15 years of experience
+                Mrs Nicole Jabbour holds a graduate degree in English studies as well as a post-graduate degree in teaching from the American University of Science and Technology. In addition, she holds over 4 years in teaching and tutoring experince. In her free time, Nicole enjoys writing poems for her future book.  
               </p>
             </div>
           </div>

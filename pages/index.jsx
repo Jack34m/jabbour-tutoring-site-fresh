@@ -18,8 +18,11 @@ export default function HomePage() {
         "telephone": "+961 71 855 369", 
         "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Beirut",
-        "addressCountry": "LB"
+        "addressLocality": "Hammana",
+        "addressCountry": "LB",
+        "addressRegion": "Mount Lebanon",
+        "postalCode": "1234",
+        "streetAddress": "Main Street"
       },
         "priceRange": "$$",
         "description": "Jabbour Tutoring provides expert Math, English, and Physics tutoring for students of all levels across Lebanon.",
@@ -34,7 +37,7 @@ export default function HomePage() {
         })
           }} />
         <title>Jabbour Tutoring | Personalized Tutoring in Lebanon</title>
-        <meta name="description" content="Math, English, and Physics tutoring for students across Lebanon. Personalized support for elementary to high school." />
+        <meta name="description" content="Math, English, and Physics tutoring for students across Lebanon, Hammana. Personalized support for elementary to high school. Private tutoring across Lebanon" />
         <meta name="keywords" content="tutoring, Lebanon, math tutor, English, physics, high school tutor, Beirut" />
         <meta property="og:title" content="Jabbour Tutoring | Personalized Tutoring in Lebanon" />
         <meta property="og:description" content="Personalized support in Math, English, and Physics for students across Lebanon." />
@@ -52,12 +55,11 @@ export default function HomePage() {
         {/* Hero Section */}
         <section className="py-24 px-6 text-center bg-gradient-to-b from-green-100 to-white">
           <h1 className="text-5xl font-playfair font-bold text-green-800 mb-4 animate-fade-in">
-            Welcome to Jabbour Tutoring
+            Welcome to Jabbour Tutoring, for all students across Lebanon.
           </h1>
-          <p className="text-xl text-gray-700 max-w-2xl mx-auto animate-fade-in delay-150">
-            Personalized tutoring in English, Mathematics, and Physics. We help
-            students overcome academic hurdles to rise far above their peers.
-          </p>
+          <h3 className="text-xl text-gray-700 max-w-2xl mx-auto animate-fade-in delay-150">
+            Personalized tutoring in English, Mathematics, and Physics, available both in person and online. We help students overcome academic hurdles to rise far above their peers.
+          </h3>
           <div className="mt-6 animate-fade-in delay-300">
             <a
               href="/contact"
@@ -78,18 +80,6 @@ export default function HomePage() {
               className="rounded-lg shadow-lg mx-auto"
             />
             <p className="mt-4 text-sm text-gray-500"></p>
-          </div>
-        </section>
-
-        {/* Video Placeholder Section */}
-        <section className="py-16 bg-gray-50 text-center">
-          <h2 className="text-3xl font-semibold mb-4 font-playfair">
-            Below is a small interview with Mrs Nicole Rached Jabbour, the
-            founder of Jabbour Tutoring.
-          </h2>
-          <br></br>
-          <div className="max-w-4xl mx-auto aspect-video bg-gray-200 flex items-center justify-center text-gray-500 rounded-lg shadow-inner">
-            <span className="text-lg">Intro Video Coming Soon</span>
           </div>
         </section>
 
