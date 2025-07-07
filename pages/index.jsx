@@ -8,46 +8,64 @@ export default function HomePage() {
   return (
     <>
       <Head>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{
-        __html: JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "Jabbour Tutoring",
-        "image": "https://www.jabbourtutoring.com/logo.png",
-        "url": "https://www.jabbourtutoring.com",
-        "telephone": "+961 71 855 369", 
-        "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Hammana",
-        "addressCountry": "LB",
-        "addressRegion": "Mount Lebanon",
-        "postalCode": "1234",
-        "streetAddress": "Main Street"
-      },
-        "priceRange": "$$",
-        "description": "Jabbour Tutoring provides expert Math, English, and Physics tutoring for students of all levels across Lebanon.",
-        "areaServed": {
-        "@type": "Place",
-        "name": "Lebanon"
-      },
-        "founder": {
-        "@type": "Person",
-        "name": "James Jabbour"
-      }
-        })
-          }} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "EducationalOrganization",
+              name: "Jabbour Tutoring",
+              image: "https://www.jabbourtutoring.com/logo.png",
+              url: "https://www.jabbourtutoring.com",
+              telephone: "+961 71 855 369",
+              address: {
+                "@type": "PostalAddress",
+                addressLocality: "Hammana",
+                addressCountry: "LB",
+                addressRegion: "Mount Lebanon",
+                postalCode: "1234",
+                streetAddress: "Main Street",
+              },
+              priceRange: "$$",
+              description:
+                "Jabbour Tutoring provides expert Math, English, and Physics tutoring for students of all levels across Lebanon.",
+              areaServed: {
+                "@type": "Place",
+                name: "Lebanon",
+              },
+              founder: {
+                "@type": "Person",
+                name: "James Jabbour",
+              },
+            }),
+          }}
+        />
         <title>Jabbour Tutoring | Personalized Tutoring in Lebanon</title>
-        <meta name="description" content="Math, English, and Physics tutoring for students across Lebanon, Hammana. Personalized support for elementary to high school. Private tutoring across Lebanon" />
-        <meta name="keywords" content="tutoring, Lebanon, math tutor, English, physics, high school tutor, Beirut" />
-        <meta property="og:title" content="Jabbour Tutoring | Personalized Tutoring in Lebanon" />
-        <meta property="og:description" content="Personalized support in Math, English, and Physics for students across Lebanon." />
+        <meta
+          name="description"
+          content="Math, English, and Physics tutoring for students across Lebanon, Hammana. Personalized support for elementary to high school. Private tutoring across Lebanon"
+        />
+        <meta
+          name="keywords"
+          content="tutoring, Lebanon, math tutor, English, physics, high school tutor, Beirut"
+        />
+        <meta
+          property="og:title"
+          content="Jabbour Tutoring | Personalized Tutoring in Lebanon"
+        />
+        <meta
+          property="og:description"
+          content="Personalized support in Math, English, and Physics for students across Lebanon."
+        />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.jabbourtutoring.com/" />
-        <meta property="og:image" content="https://www.jabbourtutoring.com/logo.png" />
+        <meta
+          property="og:image"
+          content="https://www.jabbourtutoring.com/logo.png"
+        />
         <link
           href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;600&display=swap"
           rel="stylesheet"
-          
         />
       </Head>
       <Navbar />
@@ -58,7 +76,9 @@ export default function HomePage() {
             Welcome to Jabbour Tutoring, for all students across Lebanon.
           </h1>
           <h3 className="text-xl text-gray-700 max-w-2xl mx-auto animate-fade-in delay-150">
-            Personalized tutoring in English, Mathematics, and Physics, available both in person and online. We help students overcome academic hurdles to rise far above their peers.
+            Personalized tutoring in English, Mathematics, and Physics,
+            available both in person and online. We help students overcome
+            academic hurdles to rise far above their peers.
           </h3>
           <div className="mt-6 animate-fade-in delay-300">
             <a
@@ -75,6 +95,7 @@ export default function HomePage() {
           <div className="max-w-4xl mx-auto">
             <Image
               src="https://images.unsplash.com/photo-1600195077073-3be06a6d1d2c?auto=format&fit=crop&w=1280&q=80"
+              alt="Students learning with Jabbour Tutoring in Lebanon"
               width={1280}
               height={720}
               className="rounded-lg shadow-lg mx-auto"
