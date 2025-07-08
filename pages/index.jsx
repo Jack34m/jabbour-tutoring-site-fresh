@@ -92,7 +92,7 @@ export default function HomePage() {
 
         {/* Featured Stock Image */}
         <section className="py-12 bg-white text-center">
-          <div className="max-w-4xl mx-auto">
+          {/* <div className="max-w-4xl mx-auto">
             <Image
               src="https://images.unsplash.com/photo-1600195077073-3be06a6d1d2c?auto=format&fit=crop&w=1280&q=80"
               alt="Students learning with Jabbour Tutoring in Lebanon"
@@ -101,7 +101,7 @@ export default function HomePage() {
               className="rounded-lg shadow-lg mx-auto"
             />
             <p className="mt-4 text-sm text-gray-500"></p>
-          </div>
+          </div> */}
         </section>
 
         {/* Social Icons Placeholder */}
