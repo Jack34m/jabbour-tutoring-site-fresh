@@ -1,6 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+<<<<<<< HEAD
   content: ["./pages/**/*.{js,jsx}", "./components/**/*.{js,jsx}"],
+=======
+  content: [
+    "./pages/**/*.{js,jsx,ts,tsx}",
+    "./components/**/*.{js,jsx,ts,tsx}",
+    "./styles/**/*.{css,scss}",
+  ],
+>>>>>>> 90a6853 (Fix: Fixed Tailwind not working properly)
   theme: {
     extend: {
       fontFamily: {

@@ -71,8 +71,8 @@ export default function HomePage() {
       <Navbar />
       <main className="min-h-screen bg-gray-50 text-gray-800 font-inter">
         {/* Hero Section */}
-        <section className="py-24 px-6 text-center bg-gradient-to-b from-green-100 to-white">
-          <h1 className="text-5xl font-playfair font-bold text-green-800 mb-4 animate-fade-in">
+        <section className="py-24 px-6 text-center bg-gradient-to-b from-green-100 to-white mx-auto max-w-5xl md:px-0">
+          <h1 className="text-3xl sm:text-5xl font-playfair font-bold text-green-800 mb-4 animate-fade-in">
             Welcome to Jabbour Tutoring, for all students across Lebanon.
           </h1>
           <h3 className="text-xl text-gray-700 max-w-2xl mx-auto animate-fade-in delay-150">
@@ -120,7 +120,9 @@ export default function HomePage() {
               <i className="fab fa-linkedin"></i>
             </a>
           </div>
-          <p className="mt-2 text-sm text-gray-500">(Links coming soon)</p>
+          <p className="mt-2 text-sm text-gray-500 italic">
+            (Links coming soon)
+          </p>
         </section>
       </main>
       <Footer />
