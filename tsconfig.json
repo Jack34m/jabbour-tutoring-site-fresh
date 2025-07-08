@@ -1,17 +1,8 @@
 {
   "compilerOptions": {
-<<<<<<< HEAD
-    "target": "ES2017",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
-=======
     "types": ["next", "next/image-types/global"],
     "target": "ES2017",
     "lib": ["dom", "dom.iterable", "esnext"],
->>>>>>> 90a6853 (Fix: Fixed Tailwind not working properly)
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
@@ -24,17 +15,6 @@
     "isolatedModules": true,
     "jsx": "preserve"
   },
-<<<<<<< HEAD
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
-=======
   "include": ["next-env.d.ts", ".next/types/**/*.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
->>>>>>> 90a6853 (Fix: Fixed Tailwind not working properly)
 }
