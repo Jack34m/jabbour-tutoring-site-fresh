@@ -1,4 +1,3 @@
-// File: pages/index.jsx
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Image from "next/image";
@@ -69,28 +68,30 @@ export default function HomePage() {
         />
       </Head>
       <Navbar />
-      <main className="min-h-screen bg-gray-50 text-gray-800 font-inter">
+      <main className="w-full min-h-screen bg-gray-50 text-gray-800 font-inter">
         {/* Hero Section */}
-        <section className="py-24 px-6 text-center bg-gradient-to-b from-green-100 to-white mx-auto max-w-5xl md:px-0">
-          <h1 className="text-3xl sm:text-5xl font-playfair font-bold text-green-800 mb-4 animate-fade-in">
-            Welcome to Jabbour Tutoring, for all students across Lebanon.
-          </h1>
-          <h3 className="text-xl text-gray-700 max-w-2xl mx-auto animate-fade-in delay-150">
-            Personalized tutoring in English, Mathematics, and Physics,
-            available both in person and online. We help students overcome
-            academic hurdles to rise far above their peers.
-          </h3>
-          <div className="mt-6 animate-fade-in delay-300">
-            <a
-              href="/contact"
-              className="inline-block bg-green-700 text-white px-6 py-3 rounded shadow hover:bg-green-800 transition duration-300"
-            >
-              Get Started
-            </a>
+        <section className="w-full py-24 px-6 text-center bg-gradient-to-b from-green-100 to-white sm:px-8 md:px-0">
+          <div className="max-w-5xl mx-auto">
+            <h1 className="text-3xl sm:text-5xl font-playfair font-bold text-green-800 mb-4 animate-fade-in">
+              Welcome to Jabbour Tutoring, for all students across Lebanon.
+            </h1>
+            <h3 className="text-xl text-gray-700 max-w-2xl mx-auto animate-fade-in delay-150">
+              Personalized tutoring in English, Mathematics, and Physics,
+              available both in person and online. We help students overcome
+              academic hurdles to rise far above their peers.
+            </h3>
+            <div className="mt-6 animate-fade-in delay-300">
+              <a
+                href="/contact"
+                className="inline-block bg-green-700 text-white px-6 py-3 rounded shadow hover:bg-green-800 transition duration-300"
+              >
+                Get Started
+              </a>
+            </div>
           </div>
         </section>
 
-        {/* Featured Stock Image */}
+        {/* Image coming soon */}
         <section className="py-12 bg-white text-center">
           {/* <div className="max-w-4xl mx-auto">
             <Image
