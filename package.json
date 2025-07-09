@@ -14,17 +14,12 @@
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.11",
     "@types/node": "^24.0.10",
-<<<<<<< HEAD
-    "@types/react": "^19.1.8",
-    "@types/react-dom": "^19.1.6",
-=======
     "@types/react": "^18.3.1",
     "@types/react-dom": "^18.2.0",
->>>>>>> 90a6853 (Fix: Fixed Tailwind not working properly)
-    "autoprefixer": "^10.4.21",
+    "autoprefixer": "^10.4.16",
     "cross-env": "^7.0.3",
-    "postcss": "^8.5.6",
-    "tailwindcss": "^4.1.11",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.4.3",
     "typescript": "5.8.3"
   }
 }

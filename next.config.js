@@ -8,10 +8,6 @@ const nextConfig = {
       },
     ],
   },
-  // Optional: Enable incremental builds
-  experimental: {
-    appDir: true,
-  },
 };
 
 module.exports = nextConfig;
