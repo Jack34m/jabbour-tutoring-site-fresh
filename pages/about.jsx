@@ -8,7 +8,6 @@ export default function AboutPage() {
   return (
     <>
       <Head>
-        <link rel="icon" href="/favicon.ico" />
         <title>About Us | Jabbour Tutoring</title>
         <meta
           name="description"

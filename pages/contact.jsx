@@ -6,7 +6,6 @@ export default function ContactPage() {
   return (
     <>
       <Head>
-        <link rel="icon" href="/favicon.ico" />
         <title>Contact Us | Jabbour Tutoring</title>
         <meta
           name="description"

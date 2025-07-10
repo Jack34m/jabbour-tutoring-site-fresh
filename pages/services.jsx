@@ -6,7 +6,6 @@ export default function ServicesPage() {
   return (
     <>
       <Head>
-        <link rel="icon" href="/favicon.ico" />
         <title>Services | Jabbour Tutoring</title>
         <meta
           name="description"
