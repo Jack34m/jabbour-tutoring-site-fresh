@@ -7,6 +7,7 @@ export default function HomePage() {
   return (
     <>
       <Head>
+        <link rel="icon" href="/favicon.ico" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

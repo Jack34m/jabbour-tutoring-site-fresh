@@ -6,6 +6,7 @@ export default function SubjectsPage() {
   return (
     <>
       <Head>
+        <link rel="icon" href="/favicon.ico" />
         <title>Subjects | Jabbour Tutoring</title>
         <meta
           name="description"

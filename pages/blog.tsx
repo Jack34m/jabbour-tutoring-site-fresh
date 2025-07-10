@@ -7,6 +7,7 @@ export default function BlogPage() {
   return (
     <>
       <Head>
+        <link rel="icon" href="/favicon.ico" />
         <title>Blog | Jabbour Tutoring</title>
         <meta
           name="description"
