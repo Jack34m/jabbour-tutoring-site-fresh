@@ -14,6 +14,8 @@ export default function HomePage() {
               "@context": "https://schema.org",
               "@type": "EducationalOrganization",
               name: "Jabbour Tutoring",
+              image: "https://www.jabbourtutoring.com/favicon-32x32.png",
+              logo: "https://www.jabbourtutoring.com/favicon-32x32.png",
               image: "https://www.jabbourtutoring.com/logo.png",
               url: "https://www.jabbourtutoring.com",
               telephone: "+961 71 855 369",

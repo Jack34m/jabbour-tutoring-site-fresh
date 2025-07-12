@@ -10,6 +10,7 @@ export default function Document() {
           crossorigin="anonymous"
         ></script>
         {/* Favicons */}
+        <link rel="manifest" href="/manifest.json" />
         <link rel="icon" href="/favicon.ico" />
         <link
           rel="icon"
