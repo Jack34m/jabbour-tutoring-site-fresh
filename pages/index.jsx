@@ -1,3 +1,4 @@
+// File: pages/index.jsx
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Image from "next/image";
@@ -14,8 +15,6 @@ export default function HomePage() {
               "@context": "https://schema.org",
               "@type": "EducationalOrganization",
               name: "Jabbour Tutoring",
-              image: "https://www.jabbourtutoring.com/favicon-32x32.png",
-              logo: "https://www.jabbourtutoring.com/favicon-32x32.png",
               image: "https://www.jabbourtutoring.com/logo.png",
               url: "https://www.jabbourtutoring.com",
               telephone: "+961 71 855 369",
@@ -64,6 +63,7 @@ export default function HomePage() {
           property="og:image"
           content="https://www.jabbourtutoring.com/logo.png"
         />
+        <link rel="icon" href="/favicon.ico" />
         <link
           href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;600&display=swap"
           rel="stylesheet"
@@ -93,7 +93,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Image coming soon */}
+        {/* Featured Stock Image */}
         <section className="py-12 bg-white text-center">
           {/* <div className="max-w-4xl mx-auto">
             <Image
