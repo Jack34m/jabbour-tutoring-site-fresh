@@ -38,6 +38,7 @@ export default function AboutPage() {
                   alt="James Jabbour"
                   width={112}
                   height={112}
+                  className="object-cover w-full h-full"
                 />
               </div>
               <h2 className="text-lg font-semibold text-green-800">
