@@ -32,14 +32,14 @@ export default function AboutPage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
             <div className="bg-white rounded-xl shadow-md p-6 flex flex-col items-center text-center">
-              <div className="w-28 h-28 mb-4 rounded-full overflow-hidden">
-                <Image
-                  src="james.jpg"
-                  alt="James Jabbour"
-                  width={112}
-                  height={112}
-                  className="object-cover w-full h-full"
-                />
+            <div className="w-40 h-40 mb-4 rounded-full overflow-hidden">
+              <Image
+                src="/james.jpg"
+                alt="James Jabbour"
+                width={160}
+                height={160}
+                className="object-cover w-full h-full"
+            />
               </div>
               <h2 className="text-lg font-semibold text-green-800">
                 James Jabbour
@@ -53,13 +53,15 @@ export default function AboutPage() {
             </div>
 
             <div className="bg-white rounded-xl shadow-md p-6 flex flex-col items-center text-center">
-              <div className="w-28 h-28 mb-4 rounded-full overflow-hidden">
+              <div className="w-40 h-40 mb-4 rounded-full overflow-hidden">
                 <Image
-                  src="nicole.jpg"
+                  src="/nicole.jpg"
                   alt="Nicole Jabbour"
-                  width={112}
-                  height={112}
+                  width={160}
+                  height={160}
+                  className="object-cover w-full h-full"
                 />
+              </div>
               </div>
               <h2 className="text-lg font-semibold text-green-800">
                 Nicole Jabbour
