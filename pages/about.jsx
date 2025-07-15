@@ -34,7 +34,7 @@ export default function AboutPage() {
             <div className="bg-white rounded-xl shadow-md p-6 flex flex-col items-center text-center">
             <div className="w-40 h-40 mb-4 rounded-full overflow-hidden">
               <Image
-                src="/james.jpg"
+                src="james.jpg"
                 alt="James Jabbour"
                 width={160}
                 height={160}
@@ -55,7 +55,7 @@ export default function AboutPage() {
             <div className="bg-white rounded-xl shadow-md p-6 flex flex-col items-center text-center">
               <div className="w-40 h-40 mb-4 rounded-full overflow-hidden">
                 <Image
-                  src="/nicole.jpg"
+                  src="nicole.jpg"
                   alt="Nicole Jabbour"
                   width={160}
                   height={160}
