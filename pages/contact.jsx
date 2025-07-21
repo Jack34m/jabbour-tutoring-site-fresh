@@ -1,8 +1,47 @@
 import Head from "next/head";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { useState } from "react";
 
 export default function ContactPage() {
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const [status, setStatus] = useState("");
+
+  const handleChange = (e) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus("Sending...");
+
+    try {
+      const res = await fetch("/api/send-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+
+      const data = await res.json();
+
+      if (res.ok) {
+        setStatus("Message sent successfully!");
+        setForm({ name: "", email: "", subject: "", message: "" });
+      } else {
+        setStatus(data.error || "Something went wrong.");
+      }
+    } catch (err) {
+      console.error("Email error:", err);
+      setStatus("Failed to send message.");
+    }
+  };
+
   return (
     <>
       <Head>
@@ -46,7 +85,10 @@ export default function ContactPage() {
             </a>
           </p>
 
-          <form className="bg-white shadow-md rounded-lg p-6 space-y-6 text-left">
+          <form
+            onSubmit={handleSubmit}
+            className="bg-white shadow-md rounded-lg p-6 space-y-6 text-left"
+          >
             <div>
               <label
                 htmlFor="name"
@@ -58,6 +100,8 @@ export default function ContactPage() {
                 type="text"
                 id="name"
                 name="name"
+                value={formData.name}
+                onChange={handleChange}
                 className="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-green-300 focus:outline-none"
                 placeholder="John Doe"
               />
@@ -73,6 +117,8 @@ export default function ContactPage() {
                 type="email"
                 id="email"
                 name="email"
+                value={formData.email}
+                onChange={handleChange}
                 className="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-green-300 focus:outline-none"
                 placeholder="john@example.com"
               />
@@ -87,7 +133,10 @@ export default function ContactPage() {
               <select
                 id="subject"
                 name="subject"
+                value={formData.subject}
+                onChange={handleChange}
                 className="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-green-300 focus:outline-none"
+                required
               >
                 <option value="">Select a Subject</option>
                 <option value="math">Mathematics</option>
@@ -105,6 +154,8 @@ export default function ContactPage() {
               <textarea
                 id="message"
                 name="message"
+                value={formData.message}
+                onChange={handleChange}
                 rows={4}
                 className="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-green-300 focus:outline-none"
                 placeholder="Write your message here..."
@@ -116,6 +167,9 @@ export default function ContactPage() {
             >
               Send Message
             </button>
+            {status && (
+              <p className="text-center text-sm text-gray-600 mt-2">{status}</p>
+            )}
           </form>
         </section>
       </main>
