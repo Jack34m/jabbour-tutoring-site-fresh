@@ -100,10 +100,11 @@ export default function ContactPage() {
                 type="text"
                 id="name"
                 name="name"
-                value={formData.name}
+                value={form.name}
                 onChange={handleChange}
                 className="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-green-300 focus:outline-none"
                 placeholder="John Doe"
+                required
               />
             </div>
             <div>
@@ -117,10 +118,11 @@ export default function ContactPage() {
                 type="email"
                 id="email"
                 name="email"
-                value={formData.email}
+                value={form.email}
                 onChange={handleChange}
                 className="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-green-300 focus:outline-none"
                 placeholder="john@example.com"
+                required
               />
             </div>
             <div>
@@ -133,7 +135,7 @@ export default function ContactPage() {
               <select
                 id="subject"
                 name="subject"
-                value={formData.subject}
+                value={form.subject}
                 onChange={handleChange}
                 className="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-green-300 focus:outline-none"
                 required
@@ -154,7 +156,7 @@ export default function ContactPage() {
               <textarea
                 id="message"
                 name="message"
-                value={formData.message}
+                value={form.message}
                 onChange={handleChange}
                 rows={4}
                 className="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-green-300 focus:outline-none"
