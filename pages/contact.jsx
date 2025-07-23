@@ -81,7 +81,7 @@ export default function ContactPage() {
               href="mailto:JamesJabbour88@gmail.com"
               className="text-green-700 font-semibold hover:underline"
             >
-              JamesJabbour88@gmail.com
+              jabbourtutoring@gmail.com
             </a>
           </p>
 
