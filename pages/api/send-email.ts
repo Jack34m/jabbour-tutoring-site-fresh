@@ -1,8 +1,15 @@
 import nodemailer from "nodemailer";
+import type { NextApiRequest, NextApiResponse } from "next";
 
-export default async function handler(req, res) {
+export default async function handler(
+  req: NextApiRequest,
+  res: NextApiResponse
+) {
+  console.log("👉 Request method:", req.method);
+  console.log("👉 Request body:", req.body);
+
   if (req.method !== "POST") {
-    return res.status(405).json({ message: "Method not allowed" });
+    return res.status(405).json({ error: "Only POST requests allowed" });
   }
 
   const { name, email, subject, message } = req.body;
@@ -12,31 +19,30 @@ export default async function handler(req, res) {
   }
 
   try {
-    // Configure the transporter using Gmail
     const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
-        user: process.env.GMAIL_USER, // Your Gmail
-        pass: process.env.GMAIL_PASS, // App password (not your Gmail password)
+        user: process.env.GMAIL_USER,
+        pass: process.env.GMAIL_PASS,
       },
     });
 
-    // Send the email
     await transporter.sendMail({
       from: email,
-      to: process.env.GMAIL_USER, // Receive email at your Gmail
+      to: process.env.GMAIL_USER,
       subject: `Contact Form: ${subject}`,
       text: `
         Name: ${name}
         Email: ${email}
         Subject: ${subject}
         Message: ${message}
-        `,
+      `,
     });
 
-    res.status(200).json({ message: "Email sent successfully" });
+    console.log("✅ Email sent!");
+    return res.status(200).json({ message: "Email sent successfully" });
   } catch (error) {
-    console.error("Email error:", error);
-    res.status(500).json({ message: "Something went wrong" });
+    console.error("❌ Email error:", error);
+    return res.status(500).json({ message: "Something went wrong" });
   }
 }
