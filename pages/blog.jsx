@@ -34,6 +34,13 @@ export default function BlogPage({ posts }) {
       </Head>
       <Navbar />
 
+      <div className="my-8">
+        <div id="container-1959c0594a9b045a42c7a5ede1029a1e"></div>
+        <Script
+          strategy="afterInteractive"
+          src="//pl27253833.profitableratecpm.com/1959c0594a9b045a42c7a5ede1029a1e/invoke.js"
+        />
+      </div>
       <main className="min-h-screen bg-gradient-to-b from-green-100 to-white text-gray-800 font-[Inter] px-6 py-20">
         <div className="max-w-6xl mx-auto">
           <h1 className="text-4xl font-[Playfair Display] font-bold text-green-800 text-center mb-10">
