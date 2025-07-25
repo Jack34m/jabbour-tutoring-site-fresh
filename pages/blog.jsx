@@ -35,7 +35,10 @@ export default function BlogPage({ posts }) {
       <Navbar />
 
       <div className="my-8">
-        <div id="container-1959c0594a9b045a42c7a5ede1029a1e"></div>
+        <div
+          id="container-1959c0594a9b045a42c7a5ede1029a1e"
+          style={{ width: "320px", height: "50px", margin: "0 auto" }}
+        ></div>
         <Script
           strategy="afterInteractive"
           src="//pl27253833.profitableratecpm.com/1959c0594a9b045a42c7a5ede1029a1e/invoke.js"
